@@ -13,11 +13,12 @@ namespace CMP1903_A1_2324
          * and one method that rolls the die, returns and integer and takes no parameters.
          */
 
-        //Property
-
-
-        //Method
-
-
+        private static Random random = new Random();
+        public int diceValue { get; set; } //stores values after rolling dice
+        public int Roll() //roll dice
+        {
+            diceValue = random.Next(1, 7); //generates a random number between 1 and 6
+            return diceValue;
+        }
     }
 }
